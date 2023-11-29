@@ -1,5 +1,5 @@
 module.exports.meta = require('../package.json')
-import { dirname, join, resolve } from 'node:path'
+import { dirname, join } from 'node:path'
 import { existsSync, promises as fs } from 'node:fs'
 export default async function ExampleModule(moduleOptions) {
   const opt = moduleOptions.map((o, i) => {
@@ -29,7 +29,7 @@ export default async function ExampleModule(moduleOptions) {
       )
     }
 
-    const filePath = resolve(__dirname, `../static/${o.filePath}`, o.fileName)
+    const filePath = join(this.options.rootDir,`/static/${o.filePath}`, o.fileName).split("\\").join("/")
     generateFile(filePath, URL_CONTENT)
 
     if (o.inject) {
