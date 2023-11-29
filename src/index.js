@@ -1,4 +1,4 @@
-module.exports.meta = require('./package.json')
+module.exports.meta = require('../package.json')
 import { dirname, join, resolve } from 'node:path'
 import { existsSync, promises as fs } from 'node:fs'
 export default async function ExampleModule(moduleOptions) {
