@@ -29,7 +29,7 @@ export default async function ExampleModule(moduleOptions) {
       )
     }
 
-    const filePath = join(this.options.rootDir,`/static/${o.filePath}`, o.fileName).split("\\").join("/")
+    const filePath = join(this.options.rootDir,`/${this.options.dir.static}/${o.filePath}`, o.fileName).split("\\").join("/")
     generateFile(filePath, URL_CONTENT)
 
     if (o.inject) {
