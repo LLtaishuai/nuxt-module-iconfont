@@ -34,7 +34,7 @@ export default async function ExampleModule(moduleOptions) {
 
     if (o.inject) {
       this.options.head.script.push({
-        src: join(o.filePath, o.fileName).split('\\').join('/'),
+        src: join(this.options.router.base, o.filePath, o.fileName).split('\\').join('/'),
       })
     }
   }
