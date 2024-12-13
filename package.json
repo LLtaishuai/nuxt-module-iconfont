@@ -2,9 +2,17 @@
   "name": "nuxt-module-iconfont",
   "version": "1.0.5",
   "description": "This Nuxt module is for auto download iconfont symbol js file",
-  "main": "./src/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
   "scripts": {
-    "release": "release-it"
+    "release": "release-it",
+    "build": "node esbuild.config.js"
   },
   "keywords": [
     "iconfont",
@@ -21,6 +29,7 @@
   },
   "homepage": "https://github.com/LLtaishuai/nuxt-module-iconfont#readme",
   "devDependencies": {
+    "esbuild": "^0.24.0",
     "release-it": "^17.0.0"
   }
 }
