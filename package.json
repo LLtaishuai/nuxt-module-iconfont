@@ -9,6 +9,9 @@
       "import": "./dist/index.mjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.cjs",
   "scripts": {
     "release": "release-it",
