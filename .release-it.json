@@ -4,16 +4,16 @@
     "requireCleanWorkingDir": false
   },
   "npm": {
-    "publish": true,
-    "ignoreVersion": true
+    "publish": true
   },
-  "ignoreRecommendedBump": "true",
+ 
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
         "name": "angular"
       },
-      "infile": "CHANGELOG.md"
+      "infile": "CHANGELOG.md",
+      "ignoreRecommendedBump": "true"
     }
   }
 }
