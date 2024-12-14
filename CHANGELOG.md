@@ -1,5 +1,7 @@
 
 
+## [1.0.7-rc.0](https://github.com/LLtaishuai/nuxt-module-iconfont/compare/1.0.6-0...1.0.7-rc.0) (2024-12-14)
+
 ## [1.0.6-0](https://github.com/LLtaishuai/nuxt-module-iconfont/compare/1.0.5...1.0.6-0) (2024-12-14)
 
 
