@@ -15,7 +15,8 @@
   "main": "./dist/index.cjs",
   "scripts": {
     "release": "release-it",
-    "build": "node esbuild.config.js"
+    "build": "node esbuild.config.js",
+    "commit": "git-cz"
   },
   "keywords": [
     "iconfont",
@@ -33,6 +34,7 @@
   "homepage": "https://github.com/LLtaishuai/nuxt-module-iconfont#readme",
   "devDependencies": {
     "esbuild": "^0.24.0",
+    "git-cz": "^4.9.0",
     "release-it": "^17.0.0"
   }
 }
